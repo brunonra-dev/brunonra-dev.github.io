@@ -6,29 +6,6 @@ function menuRes(x) {
   element.classList.toggle("open-close-menu");
 }
 
-// comments
-
-let modal = document.getElementById("comments");
-
-let btn = document.getElementById("comments-btn");
-
-let span = document.getElementsByClassName("comments-close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
 // thumbnail
 
 function thumbnailOne(x) {
