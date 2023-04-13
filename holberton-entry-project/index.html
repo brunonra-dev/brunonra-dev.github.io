@@ -1,0 +1,183 @@
+<!-- 
+  To-Do
+  + Slow scroll
+  + close menu mobile
+  + share menu
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holberton School - Bruno's apply project</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://rails-assets.holbertonschool.com/assets/favicon-49cb03991c9bf681893dedde75124f4c9186b73fd0b005e8e69d4da732fcbeca.ico" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Bruno's Apply Projects">
+</head>
+<body>
+  <header >
+    
+    <nav id="menu" class="max_width">
+      <a href="http://54.227.89.37/" id="logo" class="logo-primary">NAU.</a>
+
+      <ul id="menu-links">
+        <li><a href="#intro" class="text-primary">INTRODUCTION</a></li>
+        <li><a href="#about" class="text-primary">ABOUT ME</a></li>
+        <li><a href="#works" class="text-primary">WORKS</a></li>
+        <li><a href="#contact" class="text-primary">CONTACT</a></li>
+      </ul>
+
+      <div>
+        <span id="share">Share</span>
+        <ul id="share-drop">
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+
+      <div class="menu-res" onclick="menuRes(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <!-- <a href="" id="insta">Instagram</a> -->
+    </nav>
+
+  </header>
+
+  <main >
+    <section id="intro" class="background-primary text-primary max_width">
+
+        <article class="pagination">
+            <div>
+              <span class="page_number">01</span><span class="page_total">/03</span>
+            </div>
+            <span class="line_primary"></span>
+            <div class="page_title">
+              <h2>INTRODUCTION</h2>
+            </div>
+        </article>
+
+        <div class="section-container">
+          <article id="intro-text">
+          <h2>I AM BRUNO!</h2>
+          <h2>WEB DESIGNER & DEVELOPER</h2>
+          <a href="#contact" id="intro-btn">Contact me</a> <span id="pulse"></span>
+        </article>
+
+        <img id="intro-img" src="/img/samurai.png" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="background-secondary text-secondary ">
+
+        <div id="about_container" class="max_width">
+          
+          <article class="pagination">
+            <div>
+              <span class="page_number">02</span><span>/03</span>
+            </div>
+            <span class="line_secondary"></span>
+            <div class="page_title">
+              <h2 >ABOUT ME</h2>
+            </div>
+          </article>
+          <div class="section-container">
+            <article id="about-text">
+              <p>Hi, I am Bruno Rodríguez, I have 23 years old living in Uruguay </p>
+              <p>I work in web app design and development, I am searching for my passion in this world of technology, trying to be better in design and programming</p>
+            </article>
+
+            <img id="about-img" src="/img/shin.png" alt="">
+          </div>
+        </div>
+
+    </section>
+
+    <section id="works" class="background-primary text-primary max_width">
+
+        <article class="pagination">
+          <div>
+            <span class="page_number">03</span><span>/03</span>
+          </div>
+            <span class="line_primary"></span>
+            <div class="page_title">
+              <h2>WORKS</h2>
+            </div>
+        </article>
+
+        <div id="works-container">
+          <article class="works-items" onclick="thumbnailOne(this)">
+              <img class="works-img" src="/img/lincast.png" alt="">
+              <h3 class="works-title">Lincast</h3>
+          </article>
+
+          <article class="works-items" onclick="thumbnailTwo(this)">
+                <img class="works-img" src="/img/reformhouse.png" alt="">
+                <h3 class="works-title">ReformHouse</h3>
+          </article>
+
+          <article class="works-items" onclick="thumbnailTree(this)">
+                <img class="works-img" src="/img/mio.png" alt="">
+                <h3 class="works-title">MiO</h3>
+          </article>
+        </div>
+
+    </section>
+
+    <section id="contact" class="background-secondary text-secondary ">
+
+       <div id="contact-container" class="max_width">
+        <article class="pagination">
+          <div>
+            <span class="page_number">#?</span><span>/03</span>
+          </div>
+          <span class="line_secondary"></span>
+          <div class="page_title">
+            <h2>CONTACT</h2>
+          </div>
+        </article>
+
+        <div class="section-container">
+          <form action="post">
+            <div>
+              <label for="name">Hi, I am </label> 
+              <input type="text" name="name" placeholder="John Doe"> .
+            </div>
+              
+            <div>
+              <label for="what">I am looking for help with a </label> 
+              <input type="text" name="what" placeholder="Project, Web Page, Logo">
+  
+              <label for="budget">My budget is USD</label>
+              <input type="number" name="budget" placeholder="500">
+            </div>
+  
+            <div>
+              <label for="email">This is my email</label> 
+              <input type="email" name="email" placeholder="john@doe.com">
+            </div>
+              
+            <input type="submit" value="Send">
+          </form>
+  
+          <img id="contact-img" src="/img/flowers.png" alt="">
+        </div>
+
+       </div>
+
+
+    </section>
+  
+    
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

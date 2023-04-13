@@ -1,0 +1,43 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-gray-100 dark:bg-[#121315]">
+    <div class="max-w-5xl p-3 m-auto">
+
+      <header class="flex justify-between items-center bg-gray-100 dark:bg-[#121315]">
+        <a href="/en" class="bg-black text-gray-200 w-10 h-10 text-center text-3xl rounded-sm dark:border dark:border-gray-400 dark:bg-transparent">B</a>
+        <div>
+          <a href="/es" class="mr-3 dark:text-gray-200">Español</a>
+          <a href="#contact" class="bg-black text-gray-200 px-5 py-2 rounded-sm dark:bg-gray-100 dark:text-black">Contact me</a>
+        </div>
+      </header>
+
+      <slot />
+
+      <footer id="contact" class="flex flex-col items-center bg-black rounded-md text-gray-200 py-5 px-6 md:px-10 mt-16 dark:bg-[#1d2023]">
+        <h2 class="text-2xl font-bold">Contact me</h2>
+        <p class="text-center mb-10 mt-5">I'd love to have a chat to see how I can help you. Feel free to contact me for a job position or a project that you want to make a reality.</p>
+        <div>
+          <a href="https://github.com/brunonra-dev" target="_blank" class="bg-gray-700 text-gray-200 px-5 py-2 rounded-sm font-bold">GitHub</a>
+          <a href="https://www.linkedin.com/in/brunonra/" target="_blank" class="bg-blue-700 text-gray-200 px-5 py-2 rounded-sm font-bold">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+	</body>
+</html>
+<style>
+</style>
