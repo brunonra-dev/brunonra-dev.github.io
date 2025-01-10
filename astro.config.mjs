@@ -9,5 +9,9 @@ export default defineConfig({
   base: '/',
   build: {
     format: 'file'
+  },
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "en",
   }
 });

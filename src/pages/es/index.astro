@@ -1,4 +1,5 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import Layout from '../../layouts/EsLayout.astro';
 ---
 
@@ -41,7 +42,7 @@ import Layout from '../../layouts/EsLayout.astro';
   <section id="works" class="flex flex-col items-center space-y-5">
     <h2 class="text-2xl font-bold dark:text-gray-200">Proyectos y Diseños</h2>
     <div class="flex flex-col items-center space-y-5 md:flex-row md:space-y-0 md:space-x-5">
-      <a href="es/proyectos/ahorrapp.html" class="h-96 w-96 flex flex-col items-center">
+      <a href={getRelativeLocaleUrl('es', '/proyectos/ahorrapp')} class="h-96 w-96 flex flex-col items-center">
         <img src="/projects/ahorrapp.png" alt="Ahorrapp - final project Holberton" class="h-full rounded-md border">
         <h3 class="text-gray-600 dark:text-gray-400">Ahorrapp</h3>
       </a>
@@ -50,7 +51,7 @@ import Layout from '../../layouts/EsLayout.astro';
         <img src="/projects/lincast.png" alt="Lincast - Podcast app design" class="w-64 rounded-md">
         <h3>Lincast</h3>
       </a> -->
-      <a href="es/proyectos/card.html" class="h-96 w-96 flex flex-col items-center">
+      <a href={getRelativeLocaleUrl('es', '/proyectos/card')} class="h-96 w-96 flex flex-col items-center">
         <img src="/projects/card.png" alt="Card" class=" h-full rounded-md">
         <h3 class="text-gray-600 dark:text-gray-400">Card</h3>
       </a>
